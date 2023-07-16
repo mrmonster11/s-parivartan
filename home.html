@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>navbar</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+
+    </head>
+
+    <body>
+        <nav
+            class="  fixed top-0 right-0 z-auto  bg-black overflow-x-0  duration-100  py-96 hidden "
+            height="100% " id="navbar">
+
+            <a href id="closebtn"
+                class="font-bold no-underline  p-8  text-lg text-gray-400 block ease-out duration-75  hover:text-slate-200  absolute  top-0  left-16  text-xl"
+                onclick="closeNav()">&times;</a>
+            <a href
+                class="font-bold no-underline  p-8  text-lg text-gray-400 block ease-out duration-75  hover:text-slate-200">Home</a>
+            <a href
+                class="font-bold no-underline p-8  text-lg text-gray-400 block  ease-out duration-75 hover:text-slate-200 ">Explror</a>
+            <a href
+                class="font-bold no-underline  p-8  text-lg text-gray-400  block  ease-out duration-75 hover:text-slate-200 ">Message</a>
+            <a href
+                class="font-bold no-underline p-8  text-lg text-gray-400  block  ease-out duration-75  hover:text-slate-200">Setting</a>
+
+        </nav>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()"
+            class=" flex   absolute">&#9776;
+        </span>
+        <script>
+        function openNav() {
+            document.getElementById("navbar").style.display = "block";
+        }
+
+        function closeNav() {
+            document.getElementById("navbar").style.display = "hidden";
+        }
+    </script>
+
+    </body>
+
+</html>
