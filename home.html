@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>navbar</title>
-        <script src="https://cdn.tailwindcss.com"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    </head>
+</head>
 
-    <body>
-        <nav
-            class="  fixed top-0 right-0 z-auto  bg-black overflow-x-0  duration-100  py-96 hidden "
-            height="100% " id="navbar">
+<body>
+    <div class=" w-auto bg-black  h-16">
+        <img src="logo.png" alt="logo" class=" bg-black float-left top-0 h-16 w-40  invert"></img>
+        <form class="flex items-center max-w-md  mx-auto shadow rounded border-0 p-3 pt-5  ">
+            <input type="text" name="Searchbar" placeholder="Search" size="30"><span class="  cursor-pointer w-6 bg-zinc-600">&#128269;</span>
+        </form>
 
-            <a href id="closebtn"
-                class="font-bold no-underline  p-8  text-lg text-gray-400 block ease-out duration-75  hover:text-slate-200  absolute  top-0  git"
-                onclick="closeNav()">&#9776;</a>
-            <a href
-                class="font-bold no-underline  p-8  text-lg text-gray-400 block ease-out duration-75  hover:text-slate-200">Home</a>
-            <a href
-                class="font-bold no-underline p-8  text-lg text-gray-400 block  ease-out duration-75 hover:text-slate-200 ">Explror</a>
-            <a href
-                class="font-bold no-underline  p-8  text-lg text-gray-400  block  ease-out duration-75 hover:text-slate-200 ">Message</a>
-            <a href
-                class="font-bold no-underline p-8  text-lg text-gray-400  block  ease-out duration-75  hover:text-slate-200">Setting</a>
+    </div>
+    <nav class="  fixed top-0 right-0 z-auto  bg-black overflow-x-0  duration-100  py-96 hidden " height="100% " id="navbar">
+        <a href id="closebtn" class="font-bold no-underline  p-8  text-lg text-gray-400 block ease-out duration-75  hover:text-slate-200  absolute  top-0  git" onclick="closeNav()">&#9776;</a>
+        <a href class="font-bold no-underline  p-8  text-lg text-gray-400 block ease-out duration-75  hover:text-slate-200">Home</a>
+        <a href class="font-bold no-underline p-8  text-lg text-gray-400 block  ease-out duration-75 hover:text-slate-200 ">Explror</a>
+        <a href class="font-bold no-underline  p-8  text-lg text-gray-400  block  ease-out duration-75 hover:text-slate-200 ">Message</a>
+        <a href class="font-bold no-underline p-8  text-lg text-gray-400  block  ease-out duration-75  hover:text-slate-200">Setting</a>
 
-        </nav>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()"
-            class=" w-96 fixed -top-96 -right-80 z-auto overflow-x-0  duration-100  py-96">&#9776;
+    </nav>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()" class=" w-96 fixed -top-96 -right-80 z-auto overflow-x-0  duration-100  py-96  text-white block " id="nav">&#9776;
         </span>
-        <script>
+    <script>
         function openNav() {
             document.getElementById("navbar").style.display = "block";
+            document.getElementById("nav").style.color = "black";
+
+
         }
 
         function closeNav() {
@@ -40,6 +40,6 @@
         }
     </script>
 
-    </body>
+</body>
 
 </html>
